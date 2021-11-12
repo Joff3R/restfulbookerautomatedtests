@@ -1,14 +1,14 @@
 package dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Getter
-@Setter
 @NoArgsConstructor
-@JsonIgnoreProperties
+@AllArgsConstructor
+@Builder
 public class Booking {
 
     private String firstname;
@@ -17,8 +17,6 @@ public class Booking {
     private boolean depositpaid;
     private BookingDates bookingdates;
     private String additionalneeds;
-
-
 
 
 }

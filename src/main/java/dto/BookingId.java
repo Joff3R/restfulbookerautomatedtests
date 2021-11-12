@@ -1,9 +1,10 @@
 package dto;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
-@NoArgsConstructor (access = AccessLevel.PRIVATE)
+@NoArgsConstructor
 public class BookingId {
 
     private int bookingid;
